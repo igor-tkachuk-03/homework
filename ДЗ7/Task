@@ -1,0 +1,25 @@
+У даній домашній роботі вам буде необхідно створити базовий нетворкінг на AWS клауді використовуючи terraform.
+
+Список того що має бути створено
+
+AWS VPC (CIDR block: 10.0.0.0/16)
+Public AWS Subnet (CIDR block: 10.0.1.0/24)
+AWS Route table
+AWS Internet Gateway
+2 х AWS Routes ( 0.0.0.0/0 > Internet-gateway; 10.0.0.0/16 > local)
+Private AWS Subnet (CIDR block: 10.0.101.0/24)
+AWS Route table
+AWS NAT Gateway
+2 х AWS Routes ( 0.0.0.0/0 > nat-gateway; 10.0.0.0/16 > local)
+2 x AWS instances ( instance type: t3.micro, 1 з них в публічному сабнеті, 1 в приватному)
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
+
+Посилання на діаграму необхідної інфраструктури
+
+https://lucid.app/lucidchart/e410c998-8e41-422b-a14c-2af19a37ceab/edit?viewport_loc=30%2C100%2C2705%2C1404%2C0_0&invitationId=inv_0305b7b2-36c7-49a0-9329-460620247560
