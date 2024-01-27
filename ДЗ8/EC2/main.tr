@@ -8,6 +8,4 @@ resource "aws_instance" "example" {
   instance_type = "t3.micro"
   subnet_id     = var.subnet_id
   key_name      = aws_key_pair.example.key_name
-
-  # Інші налаштування...
 }
