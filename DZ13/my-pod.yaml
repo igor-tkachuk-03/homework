@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: my-container
-    image: devopshi/1qaz2wsx3edc:tagname
+    image: devopshi/1qaz2wsx3edc:latest
